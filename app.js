@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/songs";
+const BASE_URL = "http://letras.malelemdz.com/db.json";
 
 const searchInput = document.getElementById("searchInput");
 const indexContainer = document.getElementById("indexContainer");
