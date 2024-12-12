@@ -1,4 +1,4 @@
-const BASE_URL = "http://letras.malelemdz.com/db.json";
+const BASE_URL = "https://letras.malelemdz.com/db.json";
 
 const searchInput = document.getElementById("searchInput");
 const indexContainer = document.getElementById("indexContainer");
