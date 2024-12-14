@@ -1,5 +1,5 @@
 // URL de la base de datos
-const baseUrl = 'https://letras.malelemdz.com/db.json';
+const baseUrl = 'https://malelemdz.github.io/letras/db.json';
 
 // Selección de elementos del DOM
 const form = document.getElementById('song-form');
