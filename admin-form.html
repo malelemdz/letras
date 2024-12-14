@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Canciones</title>
+    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header>
+        <h1>Administrar Canciones</h1>
+    </header>
+	
+    <div class="main-container">
+	    <!-- Formulario para agregar o editar canciones -->
+        <section class="form-container">
+            <h2>Nueva Canción</h2>
+            <form id="song-form">
+                <label for="title">Título de la canción</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="artist">Artista</label>
+                <input type="text" id="artist" name="artist" required>
+
+                <label for="key">Tono</label>
+                <input type="text" id="key" name="key" required>
+
+                <label for="bpm">BPM</label>
+                <input type="number" id="bpm" name="bpm" min="0" required>
+
+                <label for="youtube">Link de YouTube</label>
+                <input type="url" id="youtube" name="youtube" required>
+
+                <label for="notes">Notas</label>
+               <textarea id="notes" name="notes" required></textarea>
+
+                <label for="lyrics">Letras</label>
+                <textarea id="lyrics" name="lyrics" required></textarea>
+
+                <div class="form-buttons">
+                <button type="submit" id="save-button">Guardar</button>
+                <button type="button" id="clear-fields">Cancelar</button>
+            </form>
+        </section>
+
+        <!-- Buscador de Canciones -->
+        <section class="search-container">
+            <h2>Buscar Canción</h2>
+            <input type="text" id="search-input" placeholder="Escribe para buscar...">
+        </section>
+
+        <!-- Mostrar resultados de canciones -->
+        <section id="search-results-container">
+            <!-- Lista de canciones aquí -->
+            <script src="app-admin.js"></script>
+        </section>
+    </div>
+<script src="auto-resize.js"></script>
+<footer>
+    <p>2025 © <a href="https://malelemdz.com/" target="_blank">Malelemdz</a></p>
+</footer>
+
+</body>
+</html>
